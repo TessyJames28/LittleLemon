@@ -18,4 +18,4 @@ class Menu(models.Model):
     inventory = IntegerRangeField(min_value=1, max_value=6)
 
     def __str__(self):
-        return self.title
+        return f"{self.title} : {self.price:.2f}"
