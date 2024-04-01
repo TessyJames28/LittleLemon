@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'restaurant',
+    'restaurant.tests',
     'rest_framework',
     'djoser',
     'rest_framework.authtoken',
@@ -148,3 +149,8 @@ REST_FRAMEWORK = {
 
 
 DJOSER = {"USER_ID_FIELD": "username"}
+
+# settings.py
+
+# Add the directory containing your tests to the TESTS setting
+TESTS = ['tests', 'my_custom_tests_directory']
